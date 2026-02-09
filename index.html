@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+
+
+
+あなた:
+この中にstyle.cssを入れておしゃれにして。<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
@@ -51,3 +55,162 @@
 </ul>
 </body>
 </html>
+
+ChatGPT:
+いいね、構成はもう「医療コラムの目次」としてかなり良いので、
+**清潔感・安心感・読みやすさ（医療系っぽさ）**を意識して整えよう。
+
+👇 そのままコピペで使える完成版を出すね。
+（style.css相当の内容を <style> に全部入れてる）
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>医療コラム｜こころの健康ガイド</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root {
+      --main: #2f7dd1;
+      --sub: #eef4fb;
+      --text: #333;
+      --muted: #666;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      margin-bottom: 8px;
+      color: var(--main);
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 0.95rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      padding-left: 12px;
+      border-left: 4px solid var(--main);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    li {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: box-shadow 0.2s ease, transform 0.1s ease;
+    }
+
+    li:hover {
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      transform: translateY(-2px);
+    }
+
+    a {
+      display: block;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    a::after {
+      content: "›";
+      float: right;
+      color: var(--main);
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>医療コラム</h1>
+    <p class="lead">
+      こころの不調や悩みについて、疾患・状況・治療法別に分かりやすくまとめています。
+    </p>
+
+    <h2>疾患・診断から探す</h2>
+    <ul>
+      <li><a href="./d1.md">うつ病とは</a></li>
+      <li><a href="./d2.md">不安症・パニック症とは</a></li>
+      <li><a href="./d3.md">双極性障害（躁うつ病）とは</a></li>
+      <li><a href="./d4.md">統合失調症とは</a></li>
+      <li><a href="./d5.md">強迫症とは</a></li>
+      <li><a href="./d6.md">PTSD・トラウマとは</a></li>
+      <li><a href="./d7.md">適応障害とは</a></li>
+      <li><a href="./d8.md">摂食障害とは</a></li>
+      <li><a href="./d9.md">発達障害（ADHD・ASD）とは</a></li>
+      <li><a href="./d10.md">認知症とは</a></li>
+    </ul>
+
+    <h2>状況・ライフイベントから探す</h2>
+    <ul>
+      <li><a href="./l1.md">職場の悩みとは</a></li>
+      <li><a href="./l2.md">学校の悩みとは</a></li>
+      <li><a href="./l3.md">家庭の悩みとは</a></li>
+      <li><a href="./l4.md">妊娠・出産期の悩みとは</a></li>
+      <li><a href="./l5.md">更年期の悩みとは</a></li>
+      <li><a href="./l6.md">喪失・悲嘆とは</a></li>
+    </ul>
+
+    <h2>治療・対処法から探す</h2>
+    <ul>
+      <li><a href="./c1.md">薬物療法とは</a></li>
+      <li><a href="./c2.md">心理療法とは</a></li>
+      <li><a href="./c3.md">生活習慣の工夫とは</a></li>
+      <li><a href="./c4.md">受診のタイミングとは</a></li>
+      <li><a href="./c5.md">リワーク・復職支援とは</a></li>
+    </ul>
+
+    <footer>
+      ※ 本コラムは一般的な情報提供を目的としたもので、診断や治療の代替ではありません。
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
